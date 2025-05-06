@@ -1,5 +1,5 @@
 
-import { ChefHat, Pizza, Coffee } from 'lucide-react';
+import { ChefHat, Pizza, Coffee, Utensils, Cake } from 'lucide-react';
 import { categories } from '@/data/foodData';
 import { useState } from 'react';
 
@@ -17,8 +17,14 @@ const CategorySection = ({ onSelectCategory, selectedCategory }: CategorySection
         return <ChefHat className="h-5 w-5" />;
       case 'coffee':
         return <Coffee className="h-5 w-5" />;
-      default:
+      case 'cake':
+        return <Cake className="h-5 w-5" />;
+      case 'utensils':
+        return <Utensils className="h-5 w-5" />;
+      case 'salad':
         return <ChefHat className="h-5 w-5" />;
+      default:
+        return <Utensils className="h-5 w-5" />;
     }
   };
 

@@ -1,5 +1,6 @@
 
 import { Star } from 'lucide-react';
+import { IndianRupee } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { FoodItem } from '@/data/foodData';
@@ -44,7 +45,10 @@ const FoodCard = ({ food, showAddButton = true }: FoodCardProps) => {
         </div>
         
         <div className="flex justify-between items-center mt-3">
-          <span className="font-bold text-food-orange">${food.price.toFixed(2)}</span>
+          <span className="font-bold text-food-orange flex items-center">
+            <IndianRupee className="h-3 w-3 mr-1" />
+            {food.price}
+          </span>
           
           {showAddButton && (
             <Button 
