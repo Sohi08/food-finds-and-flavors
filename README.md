@@ -14,3 +14,8 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
+<img width="947" alt="image" src="https://github.com/user-attachments/assets/b4420ac6-7b7c-4a0c-ae32-6215b4be3cb2" />
+
+
+
+
