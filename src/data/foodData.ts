@@ -198,19 +198,6 @@ export const foodItems: FoodItem[] = [
     prepTime: "30 min",
     popular: true,
     tags: ["Chicken", "Biryani", "Rice", "Spicy"]
-  },
-  {
-    id: 14,
-    name: "Gulab Jamun",
-    description: "Soft milk solids dumplings soaked in rose-flavored sugar syrup",
-    price: 199,
-    image: "https://images.unsplash.com/photo-1627823560125-5887c83df909?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z3VsYWIlMjBqYW11bnxlbnwwfHwwfHx8MA%3D%3D",
-    category: "Dessert",
-    restaurant: "Sweet Treats",
-    rating: 4.9,
-    prepTime: "5 min",
-    popular: true,
-    tags: ["Sweet", "Indian Dessert"]
   }
 ];
 
@@ -306,7 +293,7 @@ export const restaurants: Restaurant[] = [
     rating: 4.6,
     deliveryTime: "15-25 min",
     minOrder: 249,
-    image: "https://images.unsplash.com/photo-1627662168223-7df99068099a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHNvdXRoJTIwaW5kaWFuJTIwcmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D",
+    image: "https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c291dGglMjBpbmRpYW4lMjBmb29kfGVufDB8fDB8fHww",
     popular: true
   },
   {
