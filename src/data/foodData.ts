@@ -61,7 +61,7 @@ export const foodItems: FoodItem[] = [
     name: "Fettuccine Alfredo",
     description: "Creamy pasta with parmesan cheese and butter sauce",
     price: 599,
-    image: "https://images.unsplash.com/photo-1645112411341-6c4fd023882a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmV0dHVjY2luZSUyMGFsZnJlZG98ZW58MHx8MHx8fDA%3D",
+    image: "https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZmV0dHVjY2luZSUyMGFsZnJlZG98ZW58MHx8MHx8fDA%3D",
     category: "Pasta",
     restaurant: "Italian Delights",
     rating: 4.7,
@@ -204,7 +204,7 @@ export const foodItems: FoodItem[] = [
     name: "Gulab Jamun",
     description: "Soft milk solids dumplings soaked in rose-flavored sugar syrup",
     price: 199,
-    image: "https://images.unsplash.com/photo-1589114984556-4998bbc6ddc1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z3VsYWIlMjBqYW11bnxlbnwwfHwwfHx8MA%3D%3D",
+    image: "https://images.unsplash.com/photo-1627823560125-5887c83df909?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z3VsYWIlMjBqYW11bnxlbnwwfHwwfHx8MA%3D%3D",
     category: "Dessert",
     restaurant: "Sweet Treats",
     rating: 4.9,
@@ -306,7 +306,7 @@ export const restaurants: Restaurant[] = [
     rating: 4.6,
     deliveryTime: "15-25 min",
     minOrder: 249,
-    image: "https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c291dGglMjBpbmRpYW4lMjByZXN0YXVyYW50fGVufDB8fDB8fHww",
+    image: "https://images.unsplash.com/photo-1627662168223-7df99068099a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHNvdXRoJTIwaW5kaWFuJTIwcmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D",
     popular: true
   },
   {
