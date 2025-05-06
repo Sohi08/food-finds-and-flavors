@@ -5,11 +5,18 @@ import { ShoppingCart, Search, Menu, X, Bell } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useCart } from '@/context/CartContext';
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const { cartItems } = useCart();
+  
+  const notifications = [
+    { id: 1, text: "Your order #123 has been delivered", time: "2 mins ago" },
+    { id: 2, text: "Special offer: 20% off on all desserts!", time: "1 hour ago" },
+    { id: 3, text: "New restaurant added: Spice Garden", time: "3 hours ago" }
+  ];
   
   return (
     <nav className="bg-white shadow-sm sticky top-0 z-50">
@@ -56,12 +63,41 @@ const Navbar = () => {
               )}
             </Button>
           </Link>
-          <Button variant="ghost" size="icon" className="hover:text-food-orange">
-            <Bell size={20} />
-          </Button>
-          <Button variant="default" className="bg-food-orange hover:bg-food-orange-dark text-white">
-            Sign In
-          </Button>
+          
+          <Popover>
+            <PopoverTrigger asChild>
+              <Button variant="ghost" size="icon" className="hover:text-food-orange relative">
+                <Bell size={20} />
+                {notifications.length > 0 && (
+                  <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-3 w-3"></span>
+                )}
+              </Button>
+            </PopoverTrigger>
+            <PopoverContent className="w-80 p-0">
+              <div className="p-4 border-b">
+                <h3 className="font-medium">Notifications</h3>
+              </div>
+              <div className="max-h-80 overflow-auto">
+                {notifications.map((notification) => (
+                  <div key={notification.id} className="p-4 border-b hover:bg-gray-50 cursor-pointer">
+                    <p className="text-sm font-medium">{notification.text}</p>
+                    <p className="text-xs text-gray-500 mt-1">{notification.time}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="p-2 text-center">
+                <Button variant="link" size="sm" className="text-food-orange">
+                  View all notifications
+                </Button>
+              </div>
+            </PopoverContent>
+          </Popover>
+          
+          <Link to="/signin">
+            <Button variant="default" className="bg-food-orange hover:bg-food-orange-dark text-white">
+              Sign In
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile Navigation Toggle */}
@@ -114,9 +150,11 @@ const Navbar = () => {
           <Link to="/about" className="font-medium py-2 hover:text-food-orange transition-colors">
             About
           </Link>
-          <Button variant="default" className="bg-food-orange hover:bg-food-orange-dark text-white w-full">
-            Sign In
-          </Button>
+          <Link to="/signin">
+            <Button variant="default" className="bg-food-orange hover:bg-food-orange-dark text-white w-full">
+              Sign In
+            </Button>
+          </Link>
         </div>
       </div>
     </nav>

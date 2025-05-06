@@ -1,4 +1,3 @@
-
 export interface FoodItem {
   id: number;
   name: string;
@@ -179,7 +178,7 @@ export const foodItems: FoodItem[] = [
     name: "Veg Thali",
     description: "Complete meal with rice, roti, dal, paneer dish, vegetable curry, raita, and dessert",
     price: 399,
-    image: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aW5kaWFuJTIwdGhhbGl8ZW58MHx8MHx8fDA%3D",
+    image: "https://images.unsplash.com/photo-1567337710282-00832b415979?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwdGhhbGl8ZW58MHx8MHx8fDA%3D",
     category: "Thali",
     restaurant: "Spice Garden",
     rating: 4.5,
